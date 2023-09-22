@@ -9,6 +9,7 @@
   "labels": [
     "dependencies"
   ],
+  "commitMessagePrefix": ":arrow_up:",
   "packageRules": [
     {
       "matchUpdateTypes": [
