@@ -13,10 +13,9 @@
   "packageRules": [
     {
       "matchUpdateTypes": [
-        "minor",
         "patch"
       ],
-      "groupName": "dependencies (minor/patch)",
+      "groupName": "dependencies (patch)",
       "automerge": true,
       "automergeStrategy": "squash"
     }
