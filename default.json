@@ -6,6 +6,7 @@
   "schedule": [
     "after 1pm and before 5pm on Friday"
   ],
+  "minimumReleaseAge": "7 days",
   "labels": [
     "dependencies"
   ],
