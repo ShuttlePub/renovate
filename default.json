@@ -1,6 +1,6 @@
 {
   "extends": [
-    "config:base",
+    "config:recommended",
     ":timezone(Asia/Tokyo)"
   ],
   "schedule": [
@@ -21,16 +21,17 @@
       "automergeStrategy": "squash"
     }
   ],
-  "regexManagers": [
+  "customManagers": [
     {
-      "fileMatch": [
-        "^rust-toolchain(\\.toml)?$"
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/^rust-toolchain(\\.toml)?$/"
       ],
       "matchStrings": [
         "channel\\s*=\\s*\"(?<currentValue>\\d+\\.\\d+\\.\\d+)\""
       ],
       "depNameTemplate": "rust",
-      "lookupNameTemplate": "rust-lang/rust",
+      "packageNameTemplate": "rust-lang/rust",
       "datasourceTemplate": "github-releases"
     }
   ]
